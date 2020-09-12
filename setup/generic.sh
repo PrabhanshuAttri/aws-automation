@@ -10,6 +10,8 @@ function install() {
   sudo apt-get install -y "$@"
 }
 
+echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
+install ttf-mscorefonts-installer
 
 install software-properties-common && sudo apt-get update -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y
 
