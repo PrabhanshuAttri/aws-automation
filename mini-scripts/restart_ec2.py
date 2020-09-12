@@ -1,12 +1,11 @@
 import boto3
-ec2 = boto3.client('ec2')
+client = boto3.client('ec2')
 
-ids = ['']
+id = ''
 def reboot_ec2(ec2_instance_id):
     response = client.reboot_instances(
-        InstanceIds=ids,
-        DryRun=True # change to fals to usd
+        InstanceIds=[ec2_instance_id]
     )
     return response
 
-reboot_ec2(my_ec2_instance_id)
+reboot_ec2(id)

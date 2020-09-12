@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd ~/Downloads
-
 function showStatus() {
 	printf "\n${1}\n"
 }
