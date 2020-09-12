@@ -13,7 +13,7 @@ PEM_FILEPATH = os.path.join(HOME, '.ssh/aws_id_rsa')
 def get_key_pair(filepath, email = "user@domain"):
     key_pair_file = Path(filepath)
     if key_pair_file.is_file():
-        print('is there')
+        print('Found ssh key')
     else:
         print('Key Pair Not Found: ', filepath)
         print('Generating Key Pair...')
