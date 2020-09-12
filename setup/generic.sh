@@ -11,7 +11,10 @@ function install() {
 }
 
 
-install ubuntu-restricted-extras software-properties-common -y && sudo apt-get update -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y
+install software-properties-common -y && sudo apt-get update -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y
 
+install vim vim-nox htop git -y
 
-install vim vim-nox htop tree -y
+sudo snap install tree -y
+
+install ubuntu-restricted-extras -y && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoremove -y
