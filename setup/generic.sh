@@ -17,4 +17,6 @@ install vim vim-nox htop git
 
 sudo snap install tree -y
 
-install ubuntu-restricted-extras && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoremove -y
+install ubuntu-restricted-extras
+
+sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoremove -y
